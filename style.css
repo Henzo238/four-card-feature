@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+  margin-bottom: 4em;
+}
+body header h1 {
+  display: block;
+  white-space: nowrap;
+}
+body header .titletop {
+  font-size: 2em;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+body header .titlebottom {
+  font-size: 2em;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  letter-spacing: 1px;
+}
+body header p {
+  text-align: center;
+  font-weight: 200;
+  color: hsl(212, 6%, 44%);
+  margin-top: 1em;
+  line-height: 1.5em;
+  width: 60%;
+}
+body .wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 25px;
+  width: 57%;
+  height: 55%;
+}
+body .wrapper .card {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 10px 13px 5px rgba(0, 0, 0, 0.1);
+  color: hsl(212, 6%, 44%);
+  padding: 1em 2em 2em 2em;
+}
+body .wrapper .card img {
+  position: absolute;
+  bottom: 2.5em;
+  right: 2em;
+}
+body .wrapper .card h3 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: -0.5em;
+}
+body .wrapper .card p {
+  font-size: 0.9em;
+}
+body .wrapper .top {
+  border-top: hsl(0, 78%, 62%) 5px solid;
+  grid-area: 1/3/3/5;
+}
+body .wrapper .bottom {
+  border-top: hsl(34, 97%, 64%) 5px solid;
+  grid-area: 3/3/5/5;
+}
+body .wrapper .left {
+  border-top: hsl(180, 62%, 55%) 5px solid;
+  grid-area: 2/1/4/3;
+}
+body .wrapper .right {
+  border-top: hsl(212, 86%, 64%) 5px solid;
+  grid-area: 2/5/4/7;
+}
+
+@media (max-width: 375px) {
+  body {
+    height: auto;
+    padding: 2em;
+    display: flex;
+  }
+  body header {
+    font-size: 0.8em;
+    width: 90%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body header p {
+    width: 100%;
+  }
+  body .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  body .card {
+    width: 100%;
+    height: 190px;
+  }
+}/*# sourceMappingURL=style.css.map */

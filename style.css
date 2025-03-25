@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -10,8 +10,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-size: 16px;
+  height: 97vh;
 }
 body header {
   display: flex;
@@ -27,11 +26,11 @@ body header h1 {
 }
 body header .titletop {
   font-size: 2em;
-  font-weight: 100;
+  font-weight: lighter;
   color: hsl(234, 12%, 34%);
 }
 body header .titlebottom {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
   letter-spacing: 1px;
@@ -56,25 +55,23 @@ body .wrapper .card {
   border-radius: 5px;
   box-shadow: 0 10px 13px 5px rgba(0, 0, 0, 0.1);
   color: hsl(212, 6%, 44%);
-  padding: 1.5em 2em 2em 2em;
+  padding: 1.5em 1.5em;
 }
 body .wrapper .card img {
-  display: block;
+  display: flex;
   justify-self: flex-end;
-  width: 3vw;
-  height: auto;
-  font-size: 16px;
+  width: 45px;
+  margin-top: 20px;
 }
 body .wrapper .card h3 {
   font-weight: 600;
   color: hsl(234, 12%, 34%);
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
   margin-top: -0.1em;
   font-size: 1em;
 }
 body .wrapper .card p {
   font-size: 0.62em;
-  margin-bottom: 3em;
 }
 body .wrapper .top {
   border-top: hsl(0, 78%, 62%) 5px solid;
@@ -93,7 +90,7 @@ body .wrapper .right {
   grid-area: 2/5/4/7;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 918px) {
   body {
     height: auto;
     padding: 2em;
@@ -101,7 +98,7 @@ body .wrapper .right {
   }
   body header {
     font-size: 0.8em;
-    width: 90%;
+    width: 100%;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
@@ -109,8 +106,15 @@ body .wrapper .right {
     align-items: center;
     text-align: center;
   }
+  body header .titletop {
+    font-size: 1.5em;
+  }
+  body header .titlebottom {
+    font-size: 1.4em;
+  }
   body header p {
     width: 100%;
+    font-size: 0.9em;
   }
   body .wrapper {
     display: flex;
@@ -120,11 +124,11 @@ body .wrapper .right {
     width: 100%;
     gap: 20px;
   }
-  body .card {
-    width: 100%;
-    height: 190px;
+  body .wrapper p {
+    font-size: 1em;
   }
-  body .card img {
-    width: 30px;
+  body .card {
+    width: 90%;
+    height: 130px;
   }
 }/*# sourceMappingURL=style.css.map */
